@@ -12,6 +12,20 @@
 	//echo $cars[3];
 
 	// Array functions
-	print_r($cars);
-	var_dump($cars); 
+	//print_r($cars);
+	//var_dump($cars); 
+
+	// Associative
+	$people = array('Brad' => 35, 'Jose' => 32, 'William' => 37);
+	$ids = array(22 => 'Brad', 44 => 'Jose', 63 => 'William');
+
+	//echo $people['Brad'];
+	//echo $ids[22];
+
+	$people['Jill'] = 42;
+	//echo $people['Jill'];
+	//print_r($people);
+	var_dump($people); 
+
+
 ?>
