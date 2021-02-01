@@ -15,8 +15,8 @@
 	# sayHello();
 
 	function addNumbers($num1, $num2){
-		echo $num1 + $num2;
+		return $num1 + $num2;
 	}
 
-	addNumbers(2,3);
+	echo addNumbers(2,3);
 ?>
