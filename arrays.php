@@ -25,7 +25,14 @@
 	$people['Jill'] = 42;
 	//echo $people['Jill'];
 	//print_r($people);
-	var_dump($people); 
+	//var_dump($people); 
 
+	// Multidimensional
+	$cars = array(
+		array('Honda', 20, 10),
+		array('Toyota', 30, 20),
+		array('Ford', 25, 12),
+	);
+	echo $cars[1][0];
 
 ?>
