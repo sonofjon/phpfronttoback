@@ -17,5 +17,7 @@
 	$greeting2 = "$string1 $string2";
 	$string3 = 'They\'re here';
 
-	echo $string3;
+	define('GREETING', 'Hello Everyone');
+
+	echo GREETING;
 ?>
