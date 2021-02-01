@@ -10,6 +10,12 @@
 	$num1 =	4;
 	$num2 =	10;
 	$sum =	$num1 + $num2;
-	
-	echo $sum;
+
+	$string1 =	'Hello';
+	$string2 =	'World';
+	$greeting = $string1 . ' ' . $string2 . '!';
+	$greeting2 = "$string1 $string2";
+	$string3 = 'They\'re here';
+
+	echo $string3;
 ?>
