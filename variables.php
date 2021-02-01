@@ -5,5 +5,6 @@
 		Multiline 
 		comment 
 	*/
-	echo 'Hello World!';
+	$output	= 'Hello World!';
+	echo $output;
 ?>
