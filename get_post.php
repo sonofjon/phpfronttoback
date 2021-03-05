@@ -1,7 +1,7 @@
 <?php 
 	if (isset($_GET["name"])) {
-		print_r($_GET);
-		echo $_GET["name"];
+		#print_r($_GET);
+		echo htmlentities($_GET["name"]);
 	}
 
  ?>
