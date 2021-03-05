@@ -1,9 +1,15 @@
 <?php 
-	if (isset($_GET["name"])) {
-		#print_r($_GET);
-		echo htmlentities($_GET["name"]);
-	}
+#	if (isset($_GET["name"])) {
+#		#print_r($_GET);
+#		$name = htmlentities($_GET["name"]);
+#		echo $name;
+#	}
 
+	if (isset($_POST["name"])) {
+		#print_r($POST);
+		$name = htmlentities($_POST["name"]);
+		echo $name;
+	}
  ?>
 
 <!DOCTYPE html>
@@ -12,7 +18,7 @@
 	<title>My Website</title>
 </head>
 <body>
-	<form method="GET" action="get_post.php">
+	<form method="POST" action="get_post.php">
 		<div>
 			<label>Name</label><br>
 			<input type="text" name="name">
