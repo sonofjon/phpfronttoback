@@ -1,15 +1,22 @@
 <?php 
-#	if (isset($_GET["name"])) {
-#		#print_r($_GET);
-#		$name = htmlentities($_GET["name"]);
-#		echo $name;
-#	}
+/*
+	if (isset($_GET["name"])) {
+		print_r($_GET);
+		$name = htmlentities($_GET["name"]);
+		echo $name;
+	}
 
 	if (isset($_POST["name"])) {
-		#print_r($POST);
+		print_r($POST);
 		$name = htmlentities($_POST["name"]);
 		echo $name;
 	}
+*/
+	if (isset($_REQUEST["name"])) {
+		#print_r($REQUEST);
+		$name = htmlentities($_REQUEST["name"]);
+		echo $name;
+	}	
  ?>
 
 <!DOCTYPE html>
