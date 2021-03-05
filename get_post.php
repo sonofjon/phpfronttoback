@@ -1,11 +1,11 @@
 <?php 
-/*
-	if (isset($_GET["name"])) {
-		print_r($_GET);
-		$name = htmlentities($_GET["name"]);
-		echo $name;
-	}
 
+	if (isset($_GET["name"])) {
+		#print_r($_GET);
+		$name = htmlentities($_GET["name"]);
+		#echo $name;
+	}
+/*
 	if (isset($_POST["name"])) {
 		print_r($POST);
 		$name = htmlentities($_POST["name"]);
@@ -18,7 +18,7 @@
 		echo $name;
 	}	
 */
-	echo $_SERVER['QUERY_STRING'];
+	# echo $_SERVER['QUERY_STRING'];
 
  ?>
 
@@ -39,5 +39,10 @@
 		</div>
 		<input type="submit" name="Submit">
 	</form>
+	<ul>
+		<li><a href="get_post.php?name=Brad">Brad</a></li>
+		<li><a href="get_post.php?name=Steve">Steve</a></li>
+	</ul>
+	<h1><?php echo "{$name}'s profile"; ?></h1>
 </body>
 </html>
