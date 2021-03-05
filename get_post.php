@@ -11,12 +11,15 @@
 		$name = htmlentities($_POST["name"]);
 		echo $name;
 	}
-*/
+
 	if (isset($_REQUEST["name"])) {
 		#print_r($REQUEST);
 		$name = htmlentities($_REQUEST["name"]);
 		echo $name;
 	}	
+*/
+	echo $_SERVER['QUERY_STRING'];
+
  ?>
 
 <!DOCTYPE html>
