@@ -35,7 +35,6 @@
 	$var = "<script>alert(1)</script>";
 	# echo $var;
 	echo filter_var($var, FILTER_SANITIZE_SPECIAL_CHARS);
-	*/
 
 	$filters = array(
 		"data" => FILTER_VALIDATE_EMAIL,
@@ -49,6 +48,31 @@
 	);
 
 	print_r(filter_input_array(INPUT_POST, $filters));
+	*/
+
+	$arr = array(
+		"name" => "andreas jonsson",
+		"age" => "149",
+		"email" => "andreas@gmail..com"
+	);
+
+	$filters = array(
+		"name" => array(
+			"filter" => FILTER_CALLBACK,
+			"options" => "ucwords"
+		),
+		"age" => array(
+			"filter" => FILTER_VALIDATE_INT,
+			"options" => array(
+				"min_range" => 1,
+				"max_range" => 100
+			)
+		),
+		"email" => FILTER_VALIDATE_EMAIL
+	);
+
+	print_r(filter_var_array($arr, $filters));
+
  ?>
 
  <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
