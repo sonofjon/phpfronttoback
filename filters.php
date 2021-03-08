@@ -20,7 +20,6 @@
 			echo "Email is NOT valid";
 		}
 	}
-	*/
 
 	$var = 23;
 	$var = '23';
@@ -32,7 +31,11 @@
 	}
 
 	echo filter_var($var, FILTER_SANITIZE_NUMBER_INT);
+	*/
 
+	$var = "<script>alert(1)</script>";
+	# echo $var;
+	echo filter_var($var, FILTER_SANITIZE_SPECIAL_CHARS);
  ?>
 
  <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
