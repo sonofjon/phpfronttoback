@@ -6,7 +6,7 @@
 	} else {
 		echo "No Data";
 	}
-	*/
+	
 	if (filter_has_var(INPUT_POST, "data")) {
 		$email = $_POST["data"];
 
@@ -20,6 +20,19 @@
 			echo "Email is NOT valid";
 		}
 	}
+	*/
+
+	$var = 23;
+	$var = '23';
+	$var = "23asdasd87a6sd786asd";	
+	if (filter_var($var, FILTER_VALIDATE_INT)) {
+		echo $var." is a number.";
+	} else {
+		echo $var." is NOT a number.";
+	}
+
+	echo filter_var($var, FILTER_SANITIZE_NUMBER_INT);
+
  ?>
 
  <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
